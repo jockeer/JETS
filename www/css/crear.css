@@ -1,0 +1,28 @@
+.modal{
+    background: rgba(70, 70, 70, .8);
+    width: 95%;
+    max-height: 100%;
+}
+.modal .modal-content{
+    padding: 10px;
+}
+.modal .modal-content .row{
+    margin-bottom: 0;
+}
+.modal .modal-footer{
+    background: rgba(70, 70, 70, .8);
+}        
+.modal .modal-footer .cancelar{
+    background: rgb(128, 128, 128);
+}
+.modal .modal-footer .registrar{
+    background: #CC0000;
+}
+.input-field{
+    margin: 0;
+    margin-bottom: 20px;
+}
+.select-dropdown.dropdown-trigger{
+    color: white;
+}
+

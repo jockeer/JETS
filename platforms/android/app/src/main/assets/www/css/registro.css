@@ -1,0 +1,34 @@
+*{
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+body{
+    width: 100vw;
+    min-height: 100vh;
+    background: #fff url('../img/fondo.jpg');
+    background-size: contain;
+}
+h4{
+    font-weight: bold;
+    margin: 0;
+    padding: 0 10px; 
+    text-decoration: underline;
+}
+.input-field{
+
+}
+.input-field button{
+    width: 100%;
+    padding: 10px 0;
+    outline: 0;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    background: #CC0000;
+    
+}
+.input-field input[type='text']{
+    margin-bottom: 0;
+}
+        

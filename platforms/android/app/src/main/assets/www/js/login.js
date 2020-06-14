@@ -1,7 +1,12 @@
 const $btnIngresar = document.getElementById('btnIngresar');
+const $pantallaCarga = document.getElementById('pantallaCarga');
 
 $btnIngresar.addEventListener('click',()=>{
     location.href='menu.html';
+});
+
+$pantallaCarga.addEventListener('animationend',()=>{
+    $pantallaCarga.classList.remove('active')
 });
 // const V = [34,24,57,55,766,343,56,1,34,0];
 

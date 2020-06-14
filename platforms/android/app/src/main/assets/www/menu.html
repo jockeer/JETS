@@ -11,85 +11,39 @@
 <body>
     <img style="width: 100%;" src="img/imgMenu.jpg" alt="">
     <div class="menu">
-        <div class="opcion">
-            <a href="speaker.html">
-                <figure>
-                    <img src="img/speaker.png" alt="logo"/>
-                    <h6>SPEAKER</h6>
-    
-                </figure>
-            </a>
+        <div class="opcion"><a href="speaker.html"><figure><img src="img/speaker.png" alt="logo"/><h6>SPEAKER</h6></figure></a>
         </div>
-        <div class="opcion">
-            <a href="">
-                <figure>
-                    <img src="img/registro.png" alt="logo"/><h6>REGISTRO</h6>
-    
-                </figure>
-                <div class="contador">
-                    0
-                </div>
-            </a>
+        <div class="opcion"><a href="registro.html"><figure><img src="img/registro.png" alt="logo"/><h6>REGISTRO</h6></figure><div class="contador"> 0</div></a>
         </div>
-        <div class="opcion">
-            <a href="">
-                <figure>
-                    <img src="img/crear.png" alt="logo"/><h6>CREAR</h6>     
-                </figure>
-                <div class="contador">
-                    0
-                </div>
-            </a>
+        <div class="opcion"><a href="#modal2" class="modal-trigger"><figure><img src="img/crear.png" alt="logo"/><h6>CREAR</h6></figure><div class="contador"> 0</div></a>
         </div>
-        <div class="opcion">
-            <a href="">
-                <figure>
-                    <img src="img/cronograma.png" alt="logo"/><h6>CRONOGRAMA</h6>
-    
-                </figure>
-                <div class="contador">
-                    0
-                </div>
-            </a>
+        <div class="opcion"><a href=""><figure><img src="img/cronograma.png" alt="logo"/><h6>CRONOGRAMA</h6></figure><div class="contador">0</div></a>
         </div>
-        <div class="opcion">
-            <a href="">
-                <figure>
-                    <img src="img/poleras.png" alt="logo"/><h6>POLERAS</h6>
-    
-                </figure>
-                <div class="contador">
-                    0
-                </div>
-
-            </a>
+        <div class="opcion"><a href=""><figure><img src="img/poleras.png" alt="logo"/><h6>POLERAS</h6></figure><div class="contador">0</div></a>
         </div>
-        <div class="opcion">
-            <a href="">
-                <figure>
-                    <img src="img/reportes.png" alt="logo"/><h6>REPORTES</h6>
-    
-                </figure>
-                <div class="contador">
-                    0
-                </div>
-            </a>
+        <div class="opcion"><a href=""><figure><img src="img/reportes.png" alt="logo"/><h6>REPORTES</h6></figure><div class="contador">0</div></a>
         </div>
-        <div class="opcion">
-            <a href="">
-                <figure>
-                    <img src="img/feria.png" alt="logo"/><h6>FERIA</h6>
-    
-                </figure>
-                <div class="contador">
-                    0
-                </div>
-            </a>
+        <div class="opcion"><a href=""><figure><img src="img/feria.png" alt="logo"/><h6>FERIA</h6></figure><div class="contador">0</div></a>
         </div>      
+    </div>
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+          <h4>Modal Header</h4>
+          <p>A bunch of text</p>
+        </div>
+        <div class="modal-footer">
+          <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+        </div>
     </div>
 
     <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.modal');
+            var instances = M.Modal.init(elems);
+        });
+    </script>
 </body>
 </html>
