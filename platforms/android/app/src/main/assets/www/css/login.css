@@ -26,17 +26,21 @@ body .col .card .card-content form .input-field label,input[type='text'],input[t
 }
 body .col .card .card-content form .input-field{
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
 }
-body .col .card .card-content form .input-field input[type='submit']{
+body .col .card .card-content form .input-field .containerBtn{
+    text-align: center;
+    width: 100%;
+}
+body .col .card .card-content form .input-field input[type='button']{
     color: white;
     font-weight: 400;
     background: #CC0000;
     border-radius: 5px;
     border: none;
     padding: 10px 20px;
-    width: 50%;
+    width: 70%;
     margin-top: 10px;
 }
 

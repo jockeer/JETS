@@ -1,4 +1,8 @@
+const $btnIngresar = document.getElementById('btnIngresar');
 
+$btnIngresar.addEventListener('click',()=>{
+    location.href='menu.html';
+});
 // const V = [34,24,57,55,766,343,56,1,34,0];
 
 
