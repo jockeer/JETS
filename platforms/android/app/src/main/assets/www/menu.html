@@ -5,7 +5,10 @@
     <meta name="msapplication-tap-highlight" content="no">
     <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/menu.css">
+    <link rel="stylesheet" type="text/css" href="css/crear.css">
+
     <title>Document</title>
 </head>
 <body>
@@ -28,22 +31,64 @@
     </div>
     <div id="modal2" class="modal">
         <div class="modal-content">
-          <h4>Modal Header</h4>
-          <p>A bunch of text</p>
+            <h4>Crear Usuario</h4>
+            <div class="row">
+                <form class="col s12">
+                <div class="row">                          
+                    <div class="input-field col s12">
+                        <i class="material-icons prefix">person</i>
+                        <input id="nombre" type="text" class="validate">
+                        <label for="nombre">Nombre</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <i class="material-icons prefix">person</i>
+                        <input id="apPaterno" type="text" class="validate">
+                        <label for="apPaterno">Ap Paterno</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <i class="material-icons prefix">person</i>
+                        <input id="apMaterno" type="text" class="validate">
+                        <label for="apMaterno">Ap Materno</label>
+                    </div>
+                    <div class="input-field col s9">
+                        <i class="material-icons prefix">person_pin</i>
+                        <input id="ci" type="text" class="validate">
+                        <label for="ci">Carnet de identidad</label>
+                    </div>
+                    <div class="input-field col s9">
+                        <i class="material-icons prefix">local_phone</i>
+                        <input id="telf" type="text" class="validate">
+                        <label for="telf">telefono</label>
+                    </div>
+                    <div class="input-field col s9">
+                        <i class="material-icons prefix">email</i>
+                        <input id="email" type="text" class="validate">
+                        <label for="email">email</label>
+                    </div>
+                    <div style="margin-top: 10px;" class="input-field col s12">
+                        <i class="material-icons prefix">accessibility</i>
+                        <select>
+                          <option value="" disabled selected>Escoje el tipo</option>
+                          <option value="1">Option 1</option>
+                          <option value="2">Option 2</option>
+                          <option value="3">Option 3</option>
+                        </select>
+                        <label>Tipo de usuario</label>
+                      </div>
+                </div>
+                </form>
+            </div>
         </div>
         <div class="modal-footer">
-          <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+          <a href="#!" class="modal-close waves-effect waves-green btn cancelar">cancelar</a>
+          <a href="#!" class="modal-close waves-effect waves-green btn registrar">agregar</a>
         </div>
     </div>
 
     <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            var elems = document.querySelectorAll('.modal');
-            var instances = M.Modal.init(elems);
-        });
-    </script>
+    <script src="js/menu.js"></script>
+
 </body>
 </html>
