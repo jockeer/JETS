@@ -1,0 +1,56 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    width: 100vw;
+    min-height:  100vh;
+    background: #fff url('../img/fondo.jpg');
+    background-size: contain;
+}                    
+.logoSpeaker{
+    width: 100%;
+}
+.collapsible{
+    margin: 8px;
+    border: none;
+}
+
+.collapsible li{
+    margin-top: 5px;
+}
+.collapsible li .collapsible-header{
+    display: grid;
+    grid-template-columns: 30% 65%;
+    column-gap: 10px;
+    padding: 0;
+    background: rgba(128, 128, 128, .8) !important;
+}
+.collapsible li .collapsible-header .descripcion h6{
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+    
+}
+.collapsible li .collapsible-body{
+    background: rgba(240, 240, 240, .8);
+    border: none;
+    padding: 20px;
+}
+.collapsible li .collapsible-body .botones{
+    display: flex;
+    justify-content: space-around;
+}
+.collapsible li .collapsible-body .botones .inscribir{
+    background: #CC0000;
+}
+.collapsible li .collapsible-body .botones .encuesta{
+    background: #000;
+}
+.collapsible li .collapsible-header figure{
+    margin: 0;
+}
+.collapsible li .collapsible-header figure img{
+    width: 100%;
+    height: 100%;
+}

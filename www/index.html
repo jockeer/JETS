@@ -11,6 +11,9 @@
         <title>Hello World</title>
     </head>
     <body>
+        <div id="pantallaCarga" class="pantallaCarga active">
+            <img class="logo" src="img/icon.png" alt="">        
+        </div>
         <div class="row">
             <div class="col s12 m6">
               <div class="card">
@@ -46,5 +49,11 @@
         <script type="text/javascript" src="js/index.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
         <script type="text/javascript" src="js/login.js"></script>
+        <script>
+          document.getElementById('pantallaCarga').addEventListener('animationend',()=>{
+            document.getElementById('pantallaCarga').classList.remove('active')
+          })
+          
+        </script>
     </body>
 </html>
