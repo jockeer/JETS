@@ -43,6 +43,10 @@ body .col .card .card-content form .input-field input[type='button']{
     width: 70%;
     margin-top: 10px;
     outline: 0;
+    transition: .3s;
+}
+body .col .card .card-content form .input-field input[type='button']:active{
+    transform: scale(.9);
 }
 .pantallaCarga{
     display: none;

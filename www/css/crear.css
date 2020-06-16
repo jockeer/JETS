@@ -1,7 +1,8 @@
 .modal{
-    background: rgba(70, 70, 70, .8);
+    background: rgb(70, 70, 70);
     width: 95%;
     max-height: 100%;
+   
 }
 .modal .modal-content{
     padding: 10px;
@@ -22,7 +23,13 @@
     margin: 0;
     margin-bottom: 20px;
 }
+.input-field input[type='text']{
+    color: white;
+}
 .select-dropdown.dropdown-trigger{
     color: white;
+}
+.input-field.col.s12.reg{
+    display: none;
 }
 

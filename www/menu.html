@@ -13,6 +13,7 @@
 </head>
 <body>
     <img style="width: 100%;" src="img/imgMenu.jpg" alt="">
+    <h4 id="hola">Hola loco</h4>
     <div class="menu">
         <div class="opcion"><a href="speaker.html"><figure><img src="img/speaker.png" alt="logo"/><h6>SPEAKER</h6></figure></a>
         </div>
@@ -40,15 +41,10 @@
                         <input id="nombre" type="text" class="validate">
                         <label for="nombre">Nombre</label>
                     </div>
-                    <div class="input-field col s6">
+                    <div class="input-field col s12">
                         <i class="material-icons prefix">person</i>
-                        <input id="apPaterno" type="text" class="validate">
-                        <label for="apPaterno">Ap Paterno</label>
-                    </div>
-                    <div class="input-field col s6">
-                        <i class="material-icons prefix">person</i>
-                        <input id="apMaterno" type="text" class="validate">
-                        <label for="apMaterno">Ap Materno</label>
+                        <input id="apellido" type="text" class="validate">
+                        <label for="apellido">Apellido</label>
                     </div>
                     <div class="input-field col s9">
                         <i class="material-icons prefix">person_pin</i>
@@ -67,14 +63,18 @@
                     </div>
                     <div style="margin-top: 10px;" class="input-field col s12">
                         <i class="material-icons prefix">accessibility</i>
-                        <select>
+                        <select id="tipoUsuario">
                           <option value="" disabled selected>Escoje el tipo</option>
-                          <option value="1">Option 1</option>
-                          <option value="2">Option 2</option>
-                          <option value="3">Option 3</option>
+                          <option value="estudiante">Estudiante</option>
+                          <option value="jurado">Jurado</option>
                         </select>
                         <label>Tipo de usuario</label>
-                      </div>
+                    </div>
+                    <div id="conregistro" class="input-field col s12 reg">
+                        <i class="material-icons prefix">person</i>
+                        <input id="registro" type="text" class="validate">
+                        <label for="registro">Registro</label>
+                    </div>
                 </div>
                 </form>
             </div>
